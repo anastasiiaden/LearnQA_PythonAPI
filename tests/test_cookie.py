@@ -8,5 +8,5 @@ class TestCookie:
         cookies_name = "HomeWork"
         cookies_value = "hw_value"
 
-        assert cookies_name in response.cookies, "Cookie is wrong"
-        assert cookies_value in response.cookies["HomeWork"], "Value cookie is wrong"
+        assert cookies_name in response.cookies, "The cookie is wrong"
+        assert cookies_value in response.cookies["HomeWork"], "The cookie value is wrong"
