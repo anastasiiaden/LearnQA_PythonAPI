@@ -22,7 +22,7 @@ class MyRequests(): #центральный метод send статически
     @staticmethod
     def delete(url: str, data: dict = None, headers: dict = None, cookies: dict = None):
         with allure.step(f"DELETE request to URL '{url}'"):
-            return MyRequests._send(url, headers, cookies, "DELETE")
+            return MyRequests._send(url, data, headers, cookies, "DELETE")
 
 
 
